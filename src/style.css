@@ -1,0 +1,58 @@
+body, div, h1, button, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: sans-serif;
+}
+body {
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#container {
+    background-color: #ffffff;
+    width: 400px;
+    height: 450px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, );
+}
+
+#hero-content H1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#list input {
+    width: 300px;
+    height: 29px;
+    box-sizing: border-box;
+    box-shadow: snow;
+    font-family: sans-serif;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+#input input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5)
+}
+
+#list button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 65px;
+    height: 55px;
+}
+
+#list button:hover {
+    background-color: #0056b3;
+}
