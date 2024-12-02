@@ -1,9 +1,10 @@
-body, div, h1, button, input {
+body, div, h1, button, #inputbox {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
+
 body {
     background-color: #f3f4f6;
     display: flex;
@@ -16,32 +17,32 @@ body {
     background-color: #ffffff;
     width: 400px;
     height: 450px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, );
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
-#hero-content H1 {
+#hero-content h1 {
     font-size: 24px;
     margin-bottom: 30px;
     color: #333;
 }
 
-#list input {
-    width: 300px;
-    height: 29px;
+#inputbox input {
+    width: 250px;
+    height: 30px;
     box-sizing: border-box;
-    box-shadow: snow;
-    font-family: sans-serif;
-    padding: 10px;
+    padding: 5px;
     margin-right: 10px;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-#input input:focus {
+#inputbox input:focus {
     border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5)
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-#list button {
+#inputbox button {
     padding: 10px 15px;
     font-size: 16px;
     background-color: #007bff;
@@ -49,10 +50,32 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 65px;
-    height: 55px;
 }
 
-#list button:hover {
+#inputbox button:hover {
     background-color: #0056b3;
+}
+
+#list-container {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#list-container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#list-container li .close {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    margin-left: 10px;
 }
